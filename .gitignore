@@ -1,0 +1,34 @@
+# Archivos de respaldo
+*-backup.html
+*-antes-rutas-*.html
+happykids-online.html
+
+# Scripts de descarga (ya no necesarios después de la primera vez)
+DESCARGAR-RECURSOS.ps1
+ACTUALIZAR-RUTAS.ps1
+
+# Archivos temporales de Windows
+Thumbs.db
+desktop.ini
+*.tmp
+
+# Archivos de sistema
+.DS_Store
+
+# Scripts Python (no necesarios para GitHub Pages)
+*.py
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+
+# Archivos de editor
+.vscode/
+*.swp
+*.swo
+*~
+.idea/
+
+# Archivos temporales del servidor local
+INICIAR-SERVIDOR.bat

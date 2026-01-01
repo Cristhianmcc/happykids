@@ -1,0 +1,109 @@
+<!-- FOOTER -->
+<footer class="kids_bottom_container footer">
+	<div class="l-page-width">
+		<div class="wrapper">
+			<!-- Footer Column 1: Gallery -->
+			<div class="footer-col">
+				<div class="widget widget_text">
+					<h3 class="widget-title">Gallery</h3>
+					<div class="textwidget">
+						<!-- Agregar tu galería aquí -->
+						<p>Galería de imágenes del jardín infantil</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Footer Column 2: Contact Info -->
+			<div class="footer-col">
+				<div class="widget">
+					<h3 class="widget-title">Contact Info</h3>
+					<div class="textwidget">
+						<p><strong>Address:</strong><br/>123 Kids Street, City</p>
+						<p><strong>Phone:</strong> (123) 456-7890</p>
+						<p><strong>Email:</strong> info@happykids.com</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Footer Column 3: Calendar -->
+			<div class="footer-col">
+				<div class="widget widget_calendar">
+					<h3 class="widget-title">Calendar</h3>
+					<div id="calendar_wrap" class="calendar_wrap">
+						<!-- Calendar widget -->
+						<p>Calendario de eventos próximos</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Footer Column 4: Twitter / Social Feed -->
+			<div class="footer-col">
+				<div class="widget">
+					<h3 class="widget-title">Latest News</h3>
+					<div class="textwidget">
+						<!-- Social feed o últimas noticias -->
+						<p>Últimas noticias y actualizaciones del jardín</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Copyright -->
+		<div class="footer-bottom">
+			<div class="copyright">
+				<p>&copy; 2025 HappyKids. All rights reserved.</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- Back to Top Button -->
+<div id="kids-back-top">
+	<a href="#top">
+		<span></span>
+	</a>
+</div>
+
+<!-- Scripts -->
+<script src="https://happykids.cwsthemes.com/wp-content/plugins/revslider/public/assets/js/rbtools.min.js"></script>
+<script src="https://happykids.cwsthemes.com/wp-content/plugins/revslider/public/assets/js/rs6.min.js"></script>
+<script src="https://happykids.cwsthemes.com/wp-content/themes/happykids/front/js/jquery.easing-1.3.min.js"></script>
+<script src="https://happykids.cwsthemes.com/wp-content/themes/happykids/front/js/owl.carousel.js"></script>
+<script src="https://happykids.cwsthemes.com/wp-content/themes/happykids/front/js/jquery.prettyPhoto.js"></script>
+<script src="https://happykids.cwsthemes.com/wp-content/themes/happykids/front/js/jquery.isotope.min.js"></script>
+<script src="https://happykids.cwsthemes.com/wp-content/themes/happykids/front/js/jquery.flexnav.min.js"></script>
+<script src="https://happykids.cwsthemes.com/wp-content/themes/happykids/front/js/scripts.js"></script>
+<script src="https://happykids.cwsthemes.com/wp-content/themes/happykids/front/js/retina.js"></script>
+
+<!-- Revolution Slider Initialization -->
+<script>
+var	tpj = jQuery;
+var	revapi1;
+if(window.RS_MODULES === undefined) window.RS_MODULES = {};
+if(RS_MODULES.modules === undefined) RS_MODULES.modules = {};
+RS_MODULES.modules["revslider11"] = {
+	once: RS_MODULES.modules["revslider11"]!==undefined ? RS_MODULES.modules["revslider11"].once : undefined,
+	init:function() {
+		window.revapi1 = window.revapi1===undefined || window.revapi1===null || window.revapi1.length===0  ? document.getElementById("rev_slider_1_1") : window.revapi1;
+		if(window.revapi1 === null || window.revapi1 === undefined || window.revapi1.length==0) { 
+			window.revapi1initTry = window.revapi1initTry ===undefined ? 0 : window.revapi1initTry+1; 
+			if (window.revapi1initTry<20) requestAnimationFrame(function() {RS_MODULES.modules["revslider11"].init()}); 
+			return;
+		}
+		window.revapi1 = jQuery(window.revapi1);
+		if(window.revapi1.revolution==undefined){ return;}
+		revapi1.revolutionInit({
+			revapi:"revapi1",
+			visibilityLevels:"1240,1024,778,480",
+			gridwidth:1150,
+			gridheight:400,
+			lazyType:"smart",
+			responsiveLevels:"1240,1024,778,480",
+			navigation: {
+				touch: { touchenabled:true },
+				arrows: { enable:true, style:"uranus", hide_onleave:true }
+			}
+		});
+	}
+};
+</script>
